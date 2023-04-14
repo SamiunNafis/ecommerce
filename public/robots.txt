@@ -1,3 +1,5 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Disallow: /?
+Disallow: /index.html?
+Allow: /?hl=
+Crawl-delay: 60

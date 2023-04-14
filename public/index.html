@@ -2,25 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
     name="description"
-    content="E-CommereceWeb site created using create-react-app"
+    content="E-Commerce Web site created using create-react-app"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Poppins&display=swap" rel="stylesheet">
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <title>E-Commerece</title>
+    <link rel="manifest" href="manifest.json" />
+    <title>E-Commerce</title>
 </head>
 <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <script src="//cdn.jsdelivr.net/npm/eruda"></script>
+    <script scr="lozad.min.js"></script>
     <script>
       //  eruda.init();
+
+      const observer = lozad();
+        observer.observe();
+      if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js').then((reg) => {
+      console.log('[ServiceWorker] Registered');
+    }).catch((err) => {
+      console.error('[ServiceWorker] failed: ', err)
+    });
+}
     </script>
 </body>
 </html>

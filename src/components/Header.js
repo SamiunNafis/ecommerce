@@ -21,7 +21,7 @@ export const Header = () => {
         <div className="flex h-full w-full items-center justify-between">
           <div>
             <Link to='/'>
-                <img src={logo}  alt='logo'/>
+                <img src={logo}  alt='E-Commerce logo'/> 
             </Link>
           </div>
           <div>
@@ -38,16 +38,19 @@ export const Header = () => {
           <div>
             <ul className="flex flex-col items-center gap-8 font-titleFont">
               <li className="text-base text-black font-bold hover:text-orange-600 hover:underline underline-offset-2 decoration-[1px] cursor-pointer duration-300">
-                Home
+                Flash Sale
               </li>
               <li className="text-base text-black font-bold hover:text-orange-600 hover:underline underline-offset-2 decoration-[1px] cursor-pointer duration-300">
-                HShop
+               Payday Sale
               </li>
               <li className="text-base text-black font-bold hover:text-orange-600 hover:underline underline-offset-2 decoration-[1px] cursor-pointer duration-300">
-                HProducts
+               Live
               </li>
               <li className="text-base text-black font-bold hover:text-orange-600 hover:underline underline-offset-2 decoration-[1px] cursor-pointer duration-300">
-                HSomething
+                Partner Malls
+              </li>
+              <li className="text-base text-black font-bold hover:text-orange-600 hover:underline underline-offset-2 decoration-[1px] cursor-pointer duration-300">
+                Notifications
               </li>
             </ul>
             
